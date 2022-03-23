@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 export default function Home() {
   return (
@@ -6,7 +7,8 @@ export default function Home() {
       <h1>
         Welcome To Our Home Page
         <p>Feel free to checkout out our Library</p>
-      </h1>{' '}
+        <NavLink to="/booklist">Booklist</NavLink>
+      </h1>
     </div>
   );
 }
