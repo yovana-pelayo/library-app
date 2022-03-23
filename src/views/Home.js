@@ -7,7 +7,7 @@ export default function Home() {
       <h1>
         Welcome To Our Home Page
         <p>Feel free to checkout out our Library</p>
-        <NavLink to="/booklist">Booklist</NavLink>
+        <NavLink to="/books">Booklist</NavLink>
       </h1>
     </div>
   );
