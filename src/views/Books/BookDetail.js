@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import Book from '../../components/book/Book';
 import { getBookById } from '../../services/books';
-
+import { Link } from 'react-router-dom';
 function BookDetail() {
   const params = useParams();
   console.log(params);
@@ -14,7 +14,13 @@ function BookDetail() {
 
   if (!book) return <h3>Loading book...</h3>;
 
-  return <Book book={book} showDetail />;
+  return (
+    <div>
+      <Link to="/">Return2Home</Link>
+
+      <Book book={book} showDetail />
+    </div>
+  );
 }
 
 export default BookDetail;
