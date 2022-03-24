@@ -3,7 +3,7 @@ import './App.css';
 import { BrowserRouter } from 'react-router-dom';
 import Home from './views/Home';
 import { Switch } from 'react-router-dom';
-import { Route } from 'react-router-dom/cjs/react-router-dom';
+import { Route } from 'react-router-dom';
 import BookDetail from './views/Books/BookDetail';
 function App() {
   // TODO: Add routes to books & views
