@@ -5,7 +5,6 @@ import { getBookById } from '../../services/books';
 import { Link } from 'react-router-dom';
 function BookDetail() {
   const params = useParams();
-  console.log(params);
   const [book, setBook] = useState(null);
 
   useEffect(() => {
